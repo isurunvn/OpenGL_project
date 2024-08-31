@@ -27,3 +27,5 @@ located on the right side.
 
 • When we pressed the “space bar” it had to move the sun (from right to left) and scale
 down the bigger flower pot, which is on the right side. 
+
+Everything reset to default with pressing 'z'
