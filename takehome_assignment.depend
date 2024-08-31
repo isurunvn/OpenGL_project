@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1725119633 source:d:\opengl\takehome\takehome_assignment\main.c
+	<GL/glut.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<GL/gl.h>
+	<unistd.h>
+
