@@ -8,3 +8,12 @@
 	<GL/gl.h>
 	<unistd.h>
 
+1725126106 source:h:\ucsc\opengl\opengl - takehome_assignment\main.c
+	<GL/glut.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<GL/gl.h>
+	<unistd.h>
+

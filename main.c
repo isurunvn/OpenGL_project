@@ -13,7 +13,8 @@ float horseTail = 0.0f;
 float boatPosition = 0.0f;
 float pedalRotation = 0.0f;
 float circlePosition = 800.0f;
-float flowerPotScale = 0.8f;
+float RightflowerPotScale1 = 0.8f;
+float RightflowerPotScale2 =0.6f;
 float leftFlowerScale = 0.6f;
 float rightFishScale = 0.5f;
 
@@ -467,15 +468,19 @@ void keyboard(unsigned char key, int x, int y){
             movingSun = false;
             rightFishScale = 0.5f;
             leftFlowerScale = 0.6f;
-            flowerPotScale = 0.8f;
+            RightflowerPotScale1 = 0.8f;
+            RightflowerPotScale2 = 0.6f;
             break;
     }
 
     if (key == 'u'){
         rightFishScale = 2*rightFishScale;
         leftFlowerScale = 2*leftFlowerScale;
+    } else if (key == 's'){
+        RightflowerPotScale1 = 0.8 * RightflowerPotScale1;
+        RightflowerPotScale2 = 0.8 * RightflowerPotScale2;
     } else if (key == ' '){
-        flowerPotScale = 0.6f;
+        RightflowerPotScale1 = 0.6f;
     }
 
 }
@@ -626,15 +631,16 @@ void display(){
 
     glPushMatrix();
     glTranslatef(800.0f,250.0f,0.0f);
-    glScalef(flowerPotScale,flowerPotScale,1.0f);
+    glScalef(RightflowerPotScale1,RightflowerPotScale1,1.0f);
     glTranslatef(-800.0f,-250.0f,0.0f);
     FlowerPot(800.0f, 250.0f);
     glPopMatrix();
 
     glPushMatrix();
-    glScalef(0.6f,0.6f,1.0f);
-    glTranslatef(600.0f,200.0f,0.0f);
-    FlowerPot(600.0f, 200.0f);
+    glTranslatef(700.0f,230.0f,0.0f);
+    glScalef(RightflowerPotScale2,RightflowerPotScale2,1.0f);
+    glTranslatef(-700.0f,-230.0f,0.0f);
+    FlowerPot(700.0f, 230.0f);
     glPopMatrix();
 
     glPushMatrix();
